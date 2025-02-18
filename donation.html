@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Cause</h1>
+        <p>Help us make a difference!</p>
+        <button id="donateButton">Donate Now</button>
+    </header>
+
+    <div id="donationFormContainer" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Make a Donation</h2>
+            <div class="donation-amounts">
+                <button class="amount-button" data-amount="10">$10</button>
+                <button class="amount-button" data-amount="25">$25</button>
+                <button class="amount-button" data-amount="50">$50</button>
+                <button class="amount-button" data-amount="100">$100</button>
+                <input type="number" id="customAmount" placeholder="Other Amount">
+            </div>
+
+            <div class="frequency-selection">
+                <label>
+                    <input type="radio" name="frequency" value="monthly" checked> Monthly
+                </label>
+                <label>
+                    <input type="radio" name="frequency" value="annually"> Annually
+                </label>
+            </div>
+
+
+            <div class="payment-info">
+                <h3>Your Information</h3>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+
+                <!-- **REPLACE WITH ACTUAL PAYMENT GATEWAY FIELDS** -->
+                <!--  *** IMPORTANT: DO NOT IMPLEMENT CREDIT CARD FIELDS DIRECTLY IN YOUR HTML!!! *** -->
+                <!--  Use a secure payment gateway (Stripe, PayPal, etc.) and their integration methods. -->
+                <!--  I'm *omitting* those fields here for security.  You'd replace this section. -->
+                <p class="payment-gateway-notice">Payment information handled securely by [Payment Gateway Name]</p>
+
+            </div>
+
+            <button id="submitDonation">Donate</button>
+            <p id="donationConfirmation" class="confirmation-message"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Our Organization</p>
+    </footer>
+
+    <script src="donation.js"></script>
+    
+    <div class="container">
+
+        <div class="card">
+            <h2>Food Donation</h2>
+            <p>Name: Canned Beans</p>
+            <p>Calories: 200</p>
+            <p>Expiration Date: 2024-01-01</p>
+            <p>Status: Not Expired</p>
+        </div>
+
+        <div class="card">
+            <h2>Shelter Donation</h2>
+            <p>Location: Downtown</p>
+            <p>Capacity: 50</p>
+            <p>Occupants: 1</p>
+        </div>
+
+        <div class="card">
+            <h2>Clothes Donation</h2>
+            <p>Type: T-shirt</p>
+            <p>Size: M</p>
+            <p>Color: Blue</p>
+        </div>
+
+        <div class="card">
+            <h2>Disaster Recovery Donation</h2>
+            <p>Location: City Park</p>
+            <p>Resources: 1</p>
+        </div>
+
+        <div class="card">
+            <h2>House Donation</h2>
+            <p>Address: 123 Main St</p>
+            <p>Number of Rooms: 3</p>
+            <p>Residents: 1</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

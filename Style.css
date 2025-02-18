@@ -1,0 +1,197 @@
+Style.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+     text-align: center;
+    color: black;
+    
+}
+
+.banner{
+    min-width: 100vh;
+    width:100%;
+    background-image:url("Banner.jpeg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50px;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span{
+    background-color: red;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    color:#fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner button{
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding:15px 0;
+    height: 75px;
+}
+  
+.logo img{
+    height: 75px ;
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+
+}
+
+.hero {
+    background-image: url('Hero2.jpeg'); /* Replace with your image */
+    height: 10 00px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    
+}
+
+.services {
+    max-width: px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.services h1 {
+    text-align: center;
+    color: #333;
+}
+
+.Food-services,
+.Shelter-services,
+.Clothes-services,
+.Bursaries-services,
+.Disaster-services {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between service items */
+    transition: box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+.Food-services:hover,
+.Shelter-services:hover,
+.Clothes-services:hover,
+.Bursaries-services:hover,
+.Disaster-services:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+h2 {
+    color: #007BFF;
+    text-align: center; /* Bootstrap primary color */
+}
+
+img {
+    max-width: 3000000%; /* Responsive image */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin: 10px 30;
+    align-content: center;
+    image-orientation: 0deg; /* Space above and below the image */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 4px 2px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover{
+    background-color: #3e8e41;
+}
+
+
+.testimonials {
+    padding: 20px;
+    text-align: center;
+}
+
+.get-involved {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

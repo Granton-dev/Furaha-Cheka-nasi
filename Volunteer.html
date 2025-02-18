@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Furaha Tucheke Pamoja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #f1c40f;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .volunteer-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #f1c40f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e67e22;
+        }
+        .thank-you {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #2ecc71;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Volunteer with Furaha Tucheke Pamoja</h1>
+        <p>
+            Thank you for your interest in volunteering with us! At Furaha Tucheke Pamoja, we believe in bringing joy and hope to communities through kindness and charity. By volunteering, you can make a real difference in the lives of those in need.
+        </p>
+        <p>
+            Please fill out the form below, and we will get back to you with more details about volunteering opportunities.
+        </p>
+
+        <!-- Volunteer Form -->
+        <div class="volunteer-form">
+            <form id="volunteerForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Why do you want to volunteer with us?</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Thank You Message -->
+        <div class="thank-you" id="thankYouMessage">
+            <p>Thank you for signing up to volunteer! We will contact you shortly.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('volunteerForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            // Hide the form and show the thank-you message
+            document.getElementById('volunteerForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+
+            // You can add additional logic here to send the form data to your server
+        });
+
+        // Function to link to the volunteer page
+        function volunteer() {
+            window.location.href = 'volunteer.html'; // Replace with the actual URL of your volunteer page
+        }
+    </script>
+</body>
+</html>

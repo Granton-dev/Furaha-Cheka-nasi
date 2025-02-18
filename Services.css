@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.services {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services h1 {
+    text-align: center;
+    color: #333;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item h2 {
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+.Food-services,
+.Shelter-services,
+.Clothes-services,
+.Bursaries-services,
+.Disaster Relief-services {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px; /* Space between service items */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Food-services:hover,
+.Shelter-services:hover,
+.Clothes-services:hover,
+.Bursaries-services:hover,
+.Disaster Relief-services:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+}
+
+footer form {
+    margin-top: 10px;
+}
